@@ -23,7 +23,7 @@ def main_menu():
     print("You can type 'menu' at any time to see the above list")
     print("")
 
-character_stats = ["HEALTH:     100", "ATTACK:     20",
+character_stats = ["HEALTH:     120", "ATTACK:     20",
                    "DEFENSE:    8", "EXPERIENCE: 50"]
 # list of your charcters stats
 # this list can be accsessed by typing 'stats'
@@ -37,15 +37,15 @@ inventory = ["MAIN WEAPON:      Long Sword", "SECONDARY WEAPON: Pocket Knife",
 # list of items that your character is carrying
 # this list can be accsessed by typing 'inv'
 
-store_items = ["Shortsword    - +2 to attack  - 75 gold",
+store_items = ["Shortsword    - +3 to attack  - 75 gold",
                "Combat Knife  - +1 to attack  - 45 gold",
                "Shogun        - +4 to attack  - 250 gold",
                "Sheild        - +2 to defense - 80 gold"]
 # list of items that can be bought from the store
 # this list can be accsessed by typing 'store'
 
-levels = ["Level 1| GOOD", "Level 2| GOOD", "Level 3| GOOD", "Level 4| GOOD",
-          "Level 1| BAD", "Level 2| BAD", "Level 3| BAD", "Level 4| BAD"]
+levels = ["Level 1| HERO", "Level 2| HERO", "Level 3| HERO", "Level 4| HERO",
+          "Level 1| Villain", "Level 2| Villain", "Level 3| Villain", "Level 4| Villain"]
 # list of levels that the player can play
 # this list can be accsessed by typing 'lvl'
 
@@ -54,6 +54,8 @@ main_menu()
 
 while True:
     # all the menu options are contained in a loop
+    # when the user types an input, varios if statments decide what to do
+    # if the input does not match with an if statment the progam responds 'invalid response'
 
     user_input = str(input(""))
     # asks the player to choose what they want to do
@@ -61,21 +63,21 @@ while True:
     if user_input == "stats":
         # if the player wants to see statistics...
         for x in character_stats:
-            print(f"- {x}")
+            print(f"-> {x}")
             # print the list of stats on diffrent lines
         print("")
 
     elif user_input == "charc":
         # if the player wants to see character traits...
         for y in charcter_traits:
-            print(f"- {y}")
+            print(f"-> {y}")
             # print the list of charcater traits on diffrent lines
         print("")
 
     elif user_input == "inv":
         # if the player wants to see their inventory...
         for z in inventory:
-            print(f"- {z}")
+            print(f"-> {z}")
             # print the list of items on diffrent lines
         print("")
 
@@ -85,7 +87,7 @@ while True:
         print("You have 100 gold peices to spend")
         print("Items for Sale:")
         for a in store_items:
-            print(f"- {a}")
+            print(f"-> {a}")
             # print the list of shop items on diffrent lines
         print("")
 
@@ -93,7 +95,7 @@ while True:
         # if the player wants to see playable levels...
         print("Select a level you wish to play:")
         for b in levels:
-            print(f"- {b}")
+            print(f"-> {b}")
             # print the list of levels on diffrent lines
         print("")
 
