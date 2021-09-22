@@ -45,7 +45,8 @@ store_items = ["Shortsword    - +3 to attack  - 75 gold",
 # this list can be accsessed by typing 'store'
 
 levels = ["Level 1| HERO", "Level 2| HERO", "Level 3| HERO", "Level 4| HERO",
-          "Level 1| Villain", "Level 2| Villain", "Level 3| Villain", "Level 4| Villain"]
+          "Level 1| Villain", "Level 2| Villain",
+          "Level 3| Villain", "Level 4| Villain"]
 # list of levels that the player can play
 # this list can be accsessed by typing 'lvl'
 
@@ -55,7 +56,8 @@ main_menu()
 while True:
     # all the menu options are contained in a loop
     # when the user types an input, varios if statments decide what to do
-    # if the input does not match with an if statment the progam responds 'invalid response'
+    # if the input does not match with an if statment
+    # the progam responds 'invalid response'
 
     user_input = str(input(""))
     # asks the player to choose what they want to do
