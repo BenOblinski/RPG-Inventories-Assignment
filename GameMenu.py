@@ -8,9 +8,11 @@ import sys
 
 
 def main_menu():
-    # the deafault menu text is a function
-    # the menu shows you the options you can choose from
-    # this function can be called by typing 'menu'
+    """
+    the deafault menu text is a function
+    the menu shows you the options you can choose from
+    this function can be called by typing 'menu'
+    """
     print("Welcome to the Main Menu")
     print("You can do any of the following actions:")
     print("-stats   (veiw your characters stats)")
