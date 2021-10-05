@@ -13,7 +13,7 @@ def main_menu():
     # this function can be called by typing 'menu'
     print("------Welcome to the Main Menu------")
     print("You can do any of the following actions:")
-    print("-> stats   (veiw your characters stats)")
+    # print("-> stats   (veiw your characters stats)")
     print("-> charc   (Choose a Character to play)")
     print("-> inv     (View the items in your inventory)")
     print("-> map     (Look at your map to decide were to go)")
